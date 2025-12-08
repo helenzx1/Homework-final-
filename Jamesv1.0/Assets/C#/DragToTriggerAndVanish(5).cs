@@ -10,13 +10,20 @@ public class DragToTriggerAndVanish : MonoBehaviour
     public Collider2D targetTrigger;
 
     [Header("成功后淡出的速度")]
-    public float fadeSpeed = 1f;   // 数字越大淡出越快
+    public float fadeSpeed = 1f;
 
     [Header("淡化完后要启用的物件们（可扩充）")]
-    public GameObject[] objectsToEnable;   // ⭐ 可无限扩充
+    public GameObject[] objectsToEnable;
 
     [Header("开启 Debug Mode？")]
     public bool debugMode = true;
+
+    // ⭐⭐ 新增：达成条件（例如需要 3 颗星）
+    [Header("需要多少颗进入 Trigger 才算达成")]
+    public static int goalCount = 6;
+
+    [Header("已进入 Trigger 的数量（自动累计）")]
+    public static int currentCount = 0;
 
     private SpriteRenderer sr;
     private bool fading = false;
@@ -54,11 +61,11 @@ public class DragToTriggerAndVanish : MonoBehaviour
                 fading = false;
 
                 if (debugMode)
-                    Debug.Log("✨ 淡化完成，准备启用指定物件…");
+                    Debug.Log("✨ 淡化完成 → 启用指定物件群");
 
                 EnableObjects();
 
-                gameObject.SetActive(false); // ⭐ 自己隐藏
+                gameObject.SetActive(false);
                 return;
             }
 
@@ -101,17 +108,34 @@ public class DragToTriggerAndVanish : MonoBehaviour
         if (done) return;
 
         if (debugMode)
-        {
             Debug.Log("🟦 Trigger → 撞到：" + other.name);
-        }
 
         if (other == targetTrigger)
         {
-            if (debugMode)
-                Debug.Log("🎉 成功进入 Trigger → 开始淡化");
+            // ⭐⭐ 累积数量
+            currentCount++;
 
-            done = true;
-            fading = true;  // ⭐ 开始淡化
+            if (debugMode)
+                Debug.Log("⭐ 达成进度：" + currentCount + " / " + goalCount);
+
+            done = true;   // 每颗星只能进一次
+
+            // ⭐⭐ 只有当累计达到目标才执行淡出 + 解锁物件
+            if (currentCount >= goalCount)
+            {
+                if (debugMode)
+                    Debug.Log("🎉 全部达成 → 开始淡化");
+
+                fading = true;
+            }
+            else
+            {
+                // ⭐ 未达成 → 该物件直接隐藏（不触发淡化与启用物件）
+                if (debugMode)
+                    Debug.Log("🔸 尚未达成目标数量 → 只隐藏自己");
+
+                gameObject.SetActive(false);
+            }
         }
     }
 

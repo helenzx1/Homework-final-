@@ -903,6 +903,7 @@ GameObject:
   - component: {fileID: 462220695}
   - component: {fileID: 462220694}
   - component: {fileID: 462220693}
+  - component: {fileID: 462220696}
   m_Layer: 5
   m_Name: Text (TMP)2
   m_TagString: Untagged
@@ -1030,6 +1031,25 @@ RectTransform:
   m_AnchoredPosition: {x: -0.00036621, y: 58}
   m_SizeDelta: {x: 883.16, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &462220696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462220692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e88e35b97c9148b5830ddb141136208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textUI: {fileID: 462220693}
+  fullText: "\u201CI caught every single star! It felt so real\u2026\nBut it turns
+    out it was just a dream\u2026\u201D"
+  charInterval: 0.05
+  audioSource: {fileID: 0}
+  typingLoopClip: {fileID: 0}
+  playOnStart: 0
 --- !u!1 &591217827
 GameObject:
   m_ObjectHideFlags: 0
@@ -2479,6 +2499,7 @@ GameObject:
   - component: {fileID: 1512605280}
   - component: {fileID: 1512605282}
   - component: {fileID: 1512605281}
+  - component: {fileID: 1512605283}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -2606,6 +2627,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1512605279}
   m_CullTransparentMesh: 1
+--- !u!114 &1512605283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512605279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e88e35b97c9148b5830ddb141136208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textUI: {fileID: 1512605281}
+  fullText: "\u201CAm I\u2026 dreaming? I see so many stars\u2026 What does this
+    mean?\nFor some reason, I feel like I have to go look for them.\u201D"
+  charInterval: 0.05
+  audioSource: {fileID: 0}
+  typingLoopClip: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &1784651741
 GameObject:
   m_ObjectHideFlags: 0

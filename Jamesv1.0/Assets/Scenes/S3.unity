@@ -1520,6 +1520,7 @@ GameObject:
   - component: {fileID: 1120840867}
   - component: {fileID: 1120840869}
   - component: {fileID: 1120840868}
+  - component: {fileID: 1120840870}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1647,6 +1648,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1120840866}
   m_CullTransparentMesh: 1
+--- !u!114 &1120840870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120840866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e88e35b97c9148b5830ddb141136208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textUI: {fileID: 1120840868}
+  fullText: "\u201CI finally found the star that belongs to me\u2026\nBut this is
+    only the beginning\u2026\u201D"
+  charInterval: 0.05
+  audioSource: {fileID: 0}
+  typingLoopClip: {fileID: 0}
+  playOnStart: 0
 --- !u!1 &1122257930
 GameObject:
   m_ObjectHideFlags: 0
@@ -3308,6 +3328,7 @@ GameObject:
   - component: {fileID: 1996785061}
   - component: {fileID: 1996785063}
   - component: {fileID: 1996785062}
+  - component: {fileID: 1996785064}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -3357,7 +3378,7 @@ MonoBehaviour:
   m_text: " \u201CHuman, the stars are scattered in the bushes. Move them aside.\u201D"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 81690a36e21f84c7cb9d04f113a1ffbe, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -2200135127308049853, guid: 81690a36e21f84c7cb9d04f113a1ffbe, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3434,6 +3455,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1996785060}
   m_CullTransparentMesh: 1
+--- !u!114 &1996785064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996785060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e88e35b97c9148b5830ddb141136208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textUI: {fileID: 1996785062}
+  fullText: "\u201CHuman, the stars are scattered in the bushes. Move them aside.\u201D"
+  charInterval: 0.05
+  audioSource: {fileID: 0}
+  typingLoopClip: {fileID: 0}
+  playOnStart: 0
 --- !u!1 &2015398408
 GameObject:
   m_ObjectHideFlags: 0

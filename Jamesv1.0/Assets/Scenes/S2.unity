@@ -1987,7 +1987,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.774109, y: 44.844788}
+  m_AnchoredPosition: {x: -2.7740479, y: 44.844788}
   m_SizeDelta: {x: -1086.6357, y: -802.1559}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &424924648
@@ -5168,6 +5168,7 @@ GameObject:
   - component: {fileID: 1440093475}
   - component: {fileID: 1440093477}
   - component: {fileID: 1440093476}
+  - component: {fileID: 1440093478}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -5298,6 +5299,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1440093474}
   m_CullTransparentMesh: 1
+--- !u!114 &1440093478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440093474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e88e35b97c9148b5830ddb141136208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textUI: {fileID: 1440093476}
+  fullText: "\u201CThis isn\u2019t a dream!\nThe starlight is still drifting in from
+    the window\u2026\nI need to find my notebook first.\nThere might be clues written
+    in it.\nLet me check that messy desk\u2014maybe it\u2019s there.\u201Dl\u201CI
+    shoud find my notebook first.\nThere might be clues written in it.\nLet\u2019s
+    see if there\u2019s anything on that messy desk\u2026\u201D"
+  charInterval: 0.05
+  audioSource: {fileID: 0}
+  typingLoopClip: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &1477920164
 GameObject:
   m_ObjectHideFlags: 0
@@ -5325,13 +5348,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477920164}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.93, y: 9.12, z: 0.052107234}
+  m_LocalRotation: {x: -0.00654603, y: -0.00025568448, z: 0.03902894, w: 0.9992166}
+  m_LocalPosition: {x: -5.93, y: 9.2, z: 0.052107234}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1649939999}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.748, y: -0.059, z: 4.474}
 --- !u!199 &1477920166
 ParticleSystemRenderer:
   serializedVersion: 6

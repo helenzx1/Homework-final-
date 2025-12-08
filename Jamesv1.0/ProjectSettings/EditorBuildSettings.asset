@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/S4.unity
     guid: eb0048ec18c3e463381a038671011d93
+  - enabled: 1
+    path: Assets/Scenes/S5.unity
+    guid: a8d37b6bf181e4a3c9c4818a938c09e3
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
