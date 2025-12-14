@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 71539f6534d62bb43b8568909513672f
+guid: 6c4856343932c4300819d5417cc71a16
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4051084031928155786
-    second: "WeChat_\u622A\u5716_20251203133600-removebg-preview_0"
+      213: -7871555850506614560
+    second: 2ab57d7af6adafe53340c557ef52ed06_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "WeChat_\u622A\u5716_20251203133600-removebg-preview_0"
+      name: 2ab57d7af6adafe53340c557ef52ed06_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 2
-        width: 95
-        height: 138
+        x: 11
+        y: 6
+        width: 258
+        height: 241
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a8eb556a677583830800000000000000
-      internalID: 4051084031928155786
+      spriteID: 0e8c7e4c8ad92c290800000000000000
+      internalID: -7871555850506614560
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "WeChat_\u622A\u5716_20251203133600-removebg-preview_0": 4051084031928155786
+      2ab57d7af6adafe53340c557ef52ed06_0: -7871555850506614560
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
