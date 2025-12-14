@@ -20,6 +20,8 @@ public class ProgressDisplay : MonoBehaviour
 
     void UpdateDisplay()
     {
+        if (txt == null || data == null) return; // ⭐止血关键
+
         txt.text =
             "Progress:\n" +
             "Scene ID: " + data.currentScene + "\n" +
